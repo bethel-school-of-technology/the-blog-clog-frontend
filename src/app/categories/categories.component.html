@@ -1,4 +1,3 @@
-<h1>Categories</h1>
 
 <!-- icon loaded from w3school for search button -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,6 +9,7 @@
 
 <!-- comment back in when the categories is connected to database!! -->
 <!-- <p> {{ categories}} </p> -->
-
-<!-- a link to adding a caregory page ? -->
-<button>Add a category!</button>
+<li *ngFor="let category of categories">
+    {{ category.title }}
+    {{ category.description }}
+</li>
