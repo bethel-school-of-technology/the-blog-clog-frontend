@@ -1,4 +1,3 @@
-
 <!-- icon loaded from w3school for search button -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- code taken from w3school for search button; need to be customized!!-->
@@ -7,9 +6,17 @@
     <button type="submit"><i class="fa fa-search"></i></button>
 </form>
 
+<!-- second style search bar code using angular // from the video AngularJS Tutorial 17: Creating Simple Search Box-->
+<form>
+    <input type="text" ng-module="searchBox" placeholder="Search Category Name">
+</form>
+
+
+<br><br>
+
 <!-- comment back in when the categories is connected to database!! -->
-<!-- <p> {{ categories}} </p> -->
-<li *ngFor="let category of categories">
+<!-- adding in the | filter: searchbox to the ngFor; seeing if it connects to the search box -->
+<li *ngFor="let category of categories | filter: searchBox">
     {{ category.title }}
     {{ category.description }}
 </li>

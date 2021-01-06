@@ -1,7 +1,11 @@
-#example {
+form {
     text-align: center;
 }
 
 p {
+    text-align: center;
+}
+
+button {
     text-align: center;
 }
