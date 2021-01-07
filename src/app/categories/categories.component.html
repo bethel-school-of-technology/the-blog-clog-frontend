@@ -16,7 +16,7 @@
 
 <!-- comment back in when the categories is connected to database!! -->
 <!-- adding in the | filter: searchbox to the ngFor; seeing if it connects to the search box -->
-<li *ngFor="let category of categories | filter: searchBox">
+<li *ngFor="let category of categories">
     {{ category.title }}
     {{ category.description }}
 </li>
