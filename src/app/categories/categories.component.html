@@ -1,7 +1,8 @@
 <h2>Welcome To PostBoard</h2>
-<!-- Search Bar code for categories -->
-<form>
-    <input type="text" ng-module="searchBox" placeholder="Search Category Name">
+<!-- Search Bar code for categories for front end. Need in back end -->
+<form (ngSubmit) = "categorySearch()">
+    <input type="text" ng-module="searchBox" [(ngModel)]="searchBar" name="searchBox" placeholder="Search Category Name">
+    <button type="submit">Search</button>
 </form>
 <br>
 

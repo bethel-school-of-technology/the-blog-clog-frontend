@@ -11,10 +11,16 @@ import { CategoryService } from '../services/category.service';
 export class CategoriesComponent implements OnInit {
   categories!:Category[];
 
+  searchBar: string="";
+
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit(): void {
     this.getCategories();
+  }
+
+  categorySearch(): void {
+    console.log(this.searchBar);
   }
 
   getCategories(){
