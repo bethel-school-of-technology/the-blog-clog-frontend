@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "PostBoard"
+  "defaultProject": "PostBoard",
+  "cli": {
+    "analytics": "8b04f4e7-593d-4613-a19d-78d0830df7f2"
+  }
 }
