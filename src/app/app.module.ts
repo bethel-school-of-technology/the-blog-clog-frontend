@@ -8,11 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { CategoryService } from './services/category.service';
 import { FormsModule } from '@angular/forms';
+import { CategoryFormComponent } from './category-form/category-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
+    CategoryFormComponent
   ],
   imports: [
     BrowserModule,
