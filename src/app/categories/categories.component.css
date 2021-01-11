@@ -7,5 +7,19 @@ form {
 }
 
 li {
-    text-align: center;
+    text-align: left;
+    list-style-type: none;
+}
+.bigcatdiv{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid rgb(171, 171, 255); */
+}
+.tiscription{
+    display: flex;
+    justify-content:space-around; 
+    /* border: 3px solid burlywood;
+    border-radius: 5%; */
+    margin: auto ;
+    padding:0.5rem;
 }

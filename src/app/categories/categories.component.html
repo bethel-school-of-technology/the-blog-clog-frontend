@@ -9,8 +9,13 @@
 <br>
 
 <!-- adding in the | filter: searchbox to the ngFor; seeing if it connects to the search box -->
-
-<li *ngFor="let category of categories" >
-    {{ category.title }}
-    {{ category.description }}
-</li>
+<div class="bigcatdiv">
+    <ul *ngFor="let category of categories">
+       <div class="tiscription">
+             <li><b>Category: </b> {{ category.title }} 
+                <br>
+                <b>Description: </b> {{ category.description }}
+            </li>
+       </div>
+    </ul>
+</div>

@@ -9,12 +9,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { CategoryService } from './services/category.service';
 import { FormsModule } from '@angular/forms';
 import { CategoryFormComponent } from './category-form/category-form.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
-    CategoryFormComponent
+    CategoryFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
