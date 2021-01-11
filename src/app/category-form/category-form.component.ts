@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Categorynew } from "../models/categorynew";
+import { Category } from '../models/category';
+import { CategoryService } from '../services/category.service';
+
 
 @Component({
   selector: 'app-category-form',
@@ -7,15 +9,19 @@ import { Categorynew } from "../models/categorynew";
   styleUrls: ['./category-form.component.css']
 })
 export class CategoryFormComponent implements OnInit {
-  model: Categorynew = new Categorynew();
+  model: Category = new Category();
 
-  constructor() { }
+  constructor(private categoryService: CategoryService) { }
 
   ngOnInit(): void {
   }
 
   onSubmit() {
     console.log('Submit Successful: ', this.model);
+    this.categoryService.createCategory(this.model)
+      .subscribe(response=>{
+        console.log(response);
+      })
   }
 
 }

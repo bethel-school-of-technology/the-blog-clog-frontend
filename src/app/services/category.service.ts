@@ -12,11 +12,11 @@ import { Apicategory } from '../models/apicategory';
   providedIn: 'root'
 })
 export class CategoryService {
-  private categoryUrl = "http://localhost:3000/categories/categories"
+  private categoryUrl = "http://localhost:3000/categories"
   constructor(private http: HttpClient) { }
   
   getAllCategories(): Observable<Apicategory>{
-    return this.http.get<Apicategory>(this.categoryUrl)
+    return this.http.get<Apicategory>(this.categoryUrl + '/categories')
     .pipe(
       catchError(this.handleError<Apicategory>('getAllCategories',))
     );
@@ -24,14 +24,14 @@ export class CategoryService {
   }
 
   getOneCategory(_id:string): Observable<Category>{
-    return this.http.get<Category>(`${this.categoryUrl}/${_id}`)
+    return this.http.get<Category>(`${this.categoryUrl}/categories/${_id}`)
     .pipe(
       catchError(this.handleError<Category>('getOneCategory',))
     );
   }
 
   createCategory(category: Category){
-    return this.http.post<Category>(this.categoryUrl, category)
+    return this.http.post<Category>(this.categoryUrl + "/createcategory", category)
     .pipe(
       catchError(this.handleError<Category[]>('createCategory',[]))
     );

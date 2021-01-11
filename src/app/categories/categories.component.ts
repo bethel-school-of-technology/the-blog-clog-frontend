@@ -30,4 +30,15 @@ export class CategoriesComponent implements OnInit {
         console.log(responsecategories)
   })
   }
+
+  // add (title:string, description:string){
+  //   title=title.trim();
+  //   description=description.trim();
+  //   if(!title || !description) { return; }
+
+  //   this.categoryService.createCategory({ title, description } as Category)
+  //     .subscribe(creatingcategory=>{
+  //       this.categories.push(creatingcategory as Category)
+  //     })
+  // }
 }
