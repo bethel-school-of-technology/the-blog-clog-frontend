@@ -10,13 +10,15 @@ import { CategoryService } from './services/category.service';
 import { FormsModule } from '@angular/forms';
 import { CategoryFormComponent } from './category-form/category-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PostFormComponent } from './post-form/post-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
     CategoryFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    PostFormComponent
   ],
   imports: [
     BrowserModule,

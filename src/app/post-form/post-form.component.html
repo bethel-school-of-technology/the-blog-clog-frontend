@@ -1,0 +1,23 @@
+<form (ngSubmit)='onSubmit()'>
+
+<!-- IMPORTANT AS HECC-->
+
+<!-- the link that this form shows up on should be something like
+"www.https://blahblahblah/posts/animal%20lovers"
+it needs to be like this because that last part in the url is where the category tag gets its date from in the database/backend
+for exmple, this post would be tied to the "animal lovers" category 
+
+I think the form should show up at the top of the categories page, right above all the posts tied to that category-->
+
+<!-- also, a little tidbit, %20 in a url actually just means a space...-->
+
+    <div>
+        <label for="header">Post Title</label>
+        <input type="text" placeholder="Title" id="header" name="header" required [(ngModel)]="model.header" />
+    </div>
+    <div>
+        <label for="content">Content</label>
+        <textarea placeholder="What do you have to say?" id="content" name="content" required [(ngModel)]="model.content"></textarea>
+    </div>
+
+</form>
