@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../models/category';
 import { CategoryService } from '../services/category.service';
@@ -20,7 +21,11 @@ export class CategoriesComponent implements OnInit {
   }
 
   categorySearch(): void {
-    console.log(this.searchBar);
+    this.categoryService.getAllCategoriesWhere(this.searchBar)
+      .subscribe(searchedcategories=>{
+        this.categories=searchedcategories.category
+        console.log(searchedcategories)
+      })
   }
 
   getCategories(){
@@ -31,14 +36,4 @@ export class CategoriesComponent implements OnInit {
   })
   }
 
-  // add (title:string, description:string){
-  //   title=title.trim();
-  //   description=description.trim();
-  //   if(!title || !description) { return; }
-
-  //   this.categoryService.createCategory({ title, description } as Category)
-  //     .subscribe(creatingcategory=>{
-  //       this.categories.push(creatingcategory as Category)
-  //     })
-  // }
 }

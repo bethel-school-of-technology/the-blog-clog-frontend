@@ -23,6 +23,14 @@ export class CategoryService {
 
   }
 
+  getAllCategoriesWhere(searchBar:string): Observable<Apicategory>{
+    return this.http.get<Apicategory>(this.categoryUrl + '/search/' + searchBar)
+    .pipe(
+      catchError(this.handleError<Apicategory>('getAllCategories',))
+    );
+
+  }
+
   getOneCategory(_id:string): Observable<Category>{
     return this.http.get<Category>(`${this.categoryUrl}/categories/${_id}`)
     .pipe(
