@@ -1,18 +1,20 @@
-h2 {
+.cathead {
     text-align: center;
+    background-color: rgb(170, 230, 238);
+    padding: 1em;
 }
 
 form {
     text-align: center;
 }
 
-.bigcatdiv{
+.bigcatdiv {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     /* border: 2px solid rgb(171, 171, 255); */
 }
-.tiscription{
+.tiscription {
     display: flex;
     justify-content: space-around; 
     flex-wrap: wrap;
