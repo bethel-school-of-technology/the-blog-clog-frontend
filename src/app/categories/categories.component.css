@@ -25,4 +25,5 @@ form {
     background-color: rgb(170, 230, 238);
     width: 15em;
     min-height: 5em;
+    border-radius: 5px;
 }

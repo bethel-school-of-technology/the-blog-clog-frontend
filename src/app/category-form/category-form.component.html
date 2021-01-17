@@ -6,8 +6,8 @@
     <input type="text" class="input" placeholder="New Category Title" id="title" name="title" required [(ngModel)]="model.title" />
 </div>
 <div>
-    <label for="desctiption"></label>
-    <textarea type="text" class="input" placeholder="Fill in your glorious description of your soon-to-be-created category right here! the category will appear in the list of categories, and then you can go make your first post!"  style="width: 80%; height: 20%;"></textarea>
+    <label for="description"></label>
+    <textarea type="text" class="input" placeholder="Fill in your glorious description of your soon-to-be-created category right here! the category will appear in the list of categories, and then you can go make your first post!"  style="width: 80%; height: 20%;" id="description" name="description" required [(ngModel)]="model.description"></textarea>
 </div>
 <div>
     <button type="submit" onClick="window.location.reload();">Create Category</button>
