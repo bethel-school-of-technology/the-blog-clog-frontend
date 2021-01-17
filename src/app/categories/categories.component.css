@@ -6,20 +6,21 @@ form {
     text-align: center;
 }
 
-li {
-    text-align: left;
-    list-style-type: none;
-}
 .bigcatdiv{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     /* border: 2px solid rgb(171, 171, 255); */
 }
 .tiscription{
     display: flex;
-    justify-content:space-around; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
     /* border: 3px solid burlywood;
     border-radius: 5%; */
-    margin: auto ;
-    padding:0.5rem;
+    margin: 1em ;
+    padding:1em;
+    background-color: rgb(170, 230, 238);
+    width: 15em;
+    min-height: 5em;
 }

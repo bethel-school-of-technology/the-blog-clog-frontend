@@ -4,25 +4,19 @@
 
 <form (ngSubmit) = "categorySearch()">
     <input type="text" ng-module="searchBox" [(ngModel)]="searchBar" name="searchBox" placeholder="Search Category Name">
-    <!-- <a href="https://localhost:3000/categories/search/{{this.searchBar}}">
-    search
-    </a> -->
     <button type="submit">Search</button>
-
-
 </form>
 <br>
 
 <!-- adding in the | filter: searchbox to the ngFor; seeing if it connects to the search box -->
 <div class="bigcatdiv">
-    <ul *ngFor="let category of categories">
-       <div class="tiscription">
-             <li class = "category d-lg-flex"><b> {{ category.title }} </b>
-                <br>
-                <b>Description: </b> {{ category.description }}
-            </li>
-       </div>
-    </ul>
+    <div *ngFor="let category of categories" >
+        <div class="tiscription">
+            <b style="text-align: center;"> {{ category.title }}: </b>
+            <br>
+            {{ category.description }}
+        </div>
+    </div>
 </div>
 
 <!-- create a category! -->
