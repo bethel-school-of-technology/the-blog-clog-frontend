@@ -26,7 +26,7 @@ export class CategoryService {
   getAllCategoriesWhere(searchBar:string): Observable<Apicategory>{
     return this.http.get<Apicategory>(this.categoryUrl + '/search/' + searchBar)
     .pipe(
-      catchError(this.handleError<Apicategory>('getAllCategories',))
+      catchError(this.handleError<Apicategory>('getAllCategoriesWhere',))
     );
 
   }

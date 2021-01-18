@@ -1,26 +1,29 @@
 <br>
 
 <div class="cathead">
-<h2>Here are our categories! Take a look!</h2>
+    <h2>Here are our categories! Take a look!</h2>
 </div>
+<!-- <button onclick="bottomFunction()" id="myBtn" title="Go to bottom">Bottom</button> -->
 
 <br>
 
-<form (ngSubmit) = "categorySearch()">
-    <input type="text" ng-module="searchBox" [(ngModel)]="searchBar" name="searchBox" placeholder="Search Category Name">
+<form (ngSubmit)="categorySearch()">
+    <input type="text" ng-module="searchBox" [(ngModel)]="searchBar" name="searchBox"
+        placeholder="Search Category Name">
     <button type="submit">Search</button>
 </form>
 <br>
 
 <!-- adding in the | filter: searchbox to the ngFor; seeing if it connects to the search box -->
-<div class="bigcatdiv">
 
-    <div *ngFor="let category of categories" >
+<div class="bigcatdiv">
+    <div *ngFor="let category of categories">
         <div class="tiscription">
-            <b style="text-align: center;"> {{ category.title }}: </b>
+            <b> {{ category.title }}: </b>
             <br>
             {{ category.description }}
         </div>
+
     </div>
 </div>
 

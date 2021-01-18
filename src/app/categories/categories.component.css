@@ -1,5 +1,7 @@
 .cathead {
+    margin: auto;
     text-align: center;
+    width: 65%;
     background-color: rgb(170, 230, 238);
     padding: 1em;
 }
