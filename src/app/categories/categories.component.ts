@@ -12,7 +12,8 @@ import { CategoryService } from '../services/category.service';
 export class CategoriesComponent implements OnInit {
   categories!:Category[];
 
-  searchBar: string="";
+  // This went into app.component.ts
+  // searchBar: string="";
 
   constructor(private categoryService: CategoryService) { }
 
@@ -20,13 +21,14 @@ export class CategoriesComponent implements OnInit {
     this.getCategories();
   }
 
-  categorySearch(): void {
-    this.categoryService.getAllCategoriesWhere(this.searchBar)
-      .subscribe(searchedcategories=>{
-        this.categories=searchedcategories.category
-        console.log(searchedcategories)
-      })
-  }
+  // This went into app.component.ts
+  // categorySearch(): void {
+  //   this.categoryService.getAllCategoriesWhere(this.searchBar)
+  //     .subscribe(searchedcategories=>{
+  //       this.categories=searchedcategories.category
+  //       console.log(searchedcategories)
+  //     })
+  // }
 
   getCategories(){
     this.categoryService.getAllCategories()

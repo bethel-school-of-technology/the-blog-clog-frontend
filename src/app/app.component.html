@@ -1,4 +1,14 @@
-<app-navbar></app-navbar>
+<!-- switch the searchbar code into App component code from the categories component -->
+
+<div class="topPg">
+    <img src="/assets/postboard-mini3.jpg">
+    Welcome to PostBoard!
+    <form (ngSubmit) = "categorySearch()">
+        <input type="text" ng-module="searchBox" [(ngModel)]="searchBar" name="searchBox" placeholder="Search Category Name">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
 <app-categories></app-categories>
 <router-outlet></router-outlet>
 

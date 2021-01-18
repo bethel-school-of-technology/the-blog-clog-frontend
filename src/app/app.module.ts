@@ -9,7 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { CategoryService } from './services/category.service';
 import { FormsModule } from '@angular/forms';
 import { CategoryFormComponent } from './category-form/category-form.component';
-import { NavbarComponent } from './navbar/navbar.component';
+// import { NavbarComponent } from './navbar/navbar.component';
 import { PostFormComponent } from './post-form/post-form.component';
 
 @NgModule({
@@ -17,7 +17,7 @@ import { PostFormComponent } from './post-form/post-form.component';
     AppComponent,
     CategoriesComponent,
     CategoryFormComponent,
-    NavbarComponent,
+    // NavbarComponent,
     PostFormComponent
   ],
   imports: [
