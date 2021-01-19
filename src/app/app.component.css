@@ -1,4 +1,19 @@
-.topPg {
+.flex-container {
+    display: flex;
     background-color: lightgray;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+img {
+    padding: .5em;
+}
+
+.welcome {
+    padding: 1em;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.search {
+    padding: 2.5em;
 }

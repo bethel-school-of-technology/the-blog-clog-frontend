@@ -1,9 +1,9 @@
 <!-- switch the searchbar code into App component code from the categories component -->
 
-<div class="topPg">
+<div class="flex-container">
     <img src="/assets/postboard-mini3.jpg">
-    Welcome to PostBoard!
-    <form (ngSubmit) = "categorySearch()">
+    <p class="welcome">Welcome to PostBoard!</p>
+    <form class="search" (ngSubmit) = "categorySearch()">
         <input type="text" ng-module="searchBox" [(ngModel)]="searchBar" name="searchBox" placeholder="Search Category Name">
         <button type="submit">Search</button>
     </form>
