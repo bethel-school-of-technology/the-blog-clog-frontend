@@ -31,18 +31,19 @@ form {
 }
 
 #title {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     padding: 5px 25% 5px 10px;
     border-radius: 10px;
 }
 
 #desc {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin-top: 5px;
     padding: 5px 25% 5px 10px;
-    border-radius: 10px;
-}
+    border-radius: 10px; 
+} 
 
 #viewBtn {
     margin-top: 5px;
+    justify-content: center;
 }
