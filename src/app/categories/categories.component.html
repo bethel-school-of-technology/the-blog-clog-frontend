@@ -20,16 +20,18 @@
 <div class="bigcatdiv">
     <div *ngFor="let category of categories">
         <div class="tiscription">
-            <!-- <div id="title"> -->
-            <b> {{ category.title }} </b>
+            <div id="title">
+                <b> {{ category.title }} </b>
+            </div>
             <br>
-            <!-- <div id="desc"> -->
+            <div id="desc">
                 {{ category.description }}
-            <br><br>
+            </div>
+            
             <!-- Trying to add button to each category; Get it to route to each individual category  -->
             <!-- Look at the type & search how to get the {{}} with the button as well -->
-            <button type="submit" href="/:category" id="viewBtn">View Category</button>
         </div>
+        <button type="submit" href="/:category" id="viewBtn">View Category</button>
     </div>
 </div>
 

@@ -32,20 +32,20 @@ form {
     /* border: 1px; */
 }
 
-#title {
-    /* background-color: aliceblue; */
+/* #title {
+    background-color: white;
     padding: 5px 25% 5px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #desc {
-    /* background-color: aliceblue; */
+    background-color: white;
     margin-top: 5px;
     padding: 5px 25% 5px 10px;
-    border-radius: 10px; 
+    border-radius: 5px; 
 } 
 
 #viewBtn {
     margin-top: 5px;
     justify-content: center;
-}
+} */
