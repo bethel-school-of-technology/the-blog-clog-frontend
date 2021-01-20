@@ -7,6 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { Post } from '../models/post';
 import { Apipost } from '../models/apipost';
 
+import { Category } from '../models/category';
+import { Apicategory } from '../models/apicategory';
+
 
 @Injectable({
   providedIn: 'root'
@@ -15,23 +18,22 @@ export class PostService {
   private postUrl = "http://localhost:3000/posts"
   constructor(private http: HttpClient) { }
   
-  getAllPosts(): Observable<Apipost>{
-    return this.http.get<Apipost>(this.postUrl + '/posts')
+  getAllPosts(category: string): Observable<any>{
+    return this.http.get<any>('http://localhost:3000/categories/' + category)
     .pipe(
-      catchError(this.handleError<Apipost>('getAllPosts',))
-    );
-
-  }
-
-  getOnePost(_id:string): Observable<Post>{
-    return this.http.get<Post>(`${this.postUrl}/posts/${_id}`)
-    .pipe(
-      catchError(this.handleError<Post>('getOnePost',))
+      catchError(this.handleError<any>('getAllPosts',))
     );
   }
+
+  // getOnePost(_id:string): Observable<Post>{
+  //   return this.http.get<Post>(`${this.postUrl}/posts/${_id}`)
+  //   .pipe(
+  //     catchError(this.handleError<Post>('getOnePost',))
+  //   );
+  // }
 
   createPost(post: Post){
-    return this.http.post<Post>(this.postUrl + "/createpost", post)
+    return this.http.post<Post>(this.postUrl + "/:category", post)
     .pipe(
       catchError(this.handleError<Post[]>('createPost',[]))
     );
