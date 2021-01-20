@@ -23,10 +23,10 @@ export class CategoryService {
 
   }
 
-  getAllCategoriesWhere(searchBar:string): Observable<Apicategory>{
-    return this.http.get<Apicategory>(this.categoryUrl + '/search/' + searchBar)
+  getAllCategoriesWhere(searchBar:string): Observable<any>{
+    return this.http.get<any>(this.categoryUrl + '/search/' + searchBar)
     .pipe(
-      catchError(this.handleError<Apicategory>('getAllCategoriesWhere',))
+      catchError(this.handleError<any>('getAllCategoriesWhere',))
     );
 
   }

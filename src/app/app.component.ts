@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { CategoryService } from './services/category.service';
 import { Category } from './models/category';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -15,14 +16,16 @@ export class AppComponent {
   categories!:Category[];
   searchBar: string="";
 
-  constructor(private categoryService: CategoryService) { }
+  constructor(private categoryService: CategoryService, private router: Router) { }
 
   categorySearch(): void {
-    this.categoryService.getAllCategoriesWhere(this.searchBar)
-      .subscribe(searchedcategories=>{
-        this.categories=searchedcategories.category
-        console.log(searchedcategories)
-      })
+    this.router.navigateByUrl("/search/" + this.searchBar)
+
+    // this.categoryService.getAllCategoriesWhere(this.searchBar)
+    //   .subscribe(searchedcategories=>{
+    //     this.categories=searchedcategories.category
+    //     console.log(searchedcategories)
+    //   })
   }
 
 }
