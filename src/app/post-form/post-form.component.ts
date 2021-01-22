@@ -27,6 +27,10 @@ export class PostFormComponent implements OnInit {
 
   onSubmit() {
     console.log('post successful')
+    this.postService.createPost(this.category, this.model)
+      .subscribe(response=>{
+        console.log(response);
+      })
   }
 
   getPosts() {
