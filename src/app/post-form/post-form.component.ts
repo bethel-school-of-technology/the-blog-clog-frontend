@@ -36,4 +36,6 @@ export class PostFormComponent implements OnInit {
       console.log(responseposts)
     })
   }
+
+  
 }
