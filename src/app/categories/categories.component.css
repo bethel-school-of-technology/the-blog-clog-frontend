@@ -16,6 +16,7 @@ form {
     flex-wrap: wrap;
     /* border: 2px solid rgb(171, 171, 255); */
 }
+
 .tiscription {
     display: flex;
     justify-content: space-around; 

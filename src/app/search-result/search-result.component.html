@@ -4,14 +4,16 @@
             <div id="title">
                 <b> {{ category.title }} </b>
             </div>
-            <br>
+            <br><br>
             <div id="desc">
                 {{ category.description }}
             </div>
-            
+
+            <br><br>
+
+            <button type="submit" routerLink="/categories/{{category.title}}" id="viewBtn">View Category</button>
             <!-- Trying to add button to each category; Get it to route to each individual category  -->
             <!-- Look at the type & search how to get the {{}} with the button as well -->
         </div>
-        <button type="submit" href="/:category" id="viewBtn">View Category</button>
     </div>
 </div>
