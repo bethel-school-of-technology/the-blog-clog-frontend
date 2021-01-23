@@ -32,10 +32,10 @@ export class PostService {
   //   );
   // }
 
-  createPost(post: Post){
-    return this.http.post<Post>(this.postUrl + "/:category", post)
+  createPost(category:string, post: Post): Observable<any>{
+    return this.http.post<any>(this.postUrl + '/' + category, post)
     .pipe(
-      catchError(this.handleError<Post[]>('createPost',[]))
+      catchError(this.handleError<any[]>('createPost',[]))
     );
   }
 
