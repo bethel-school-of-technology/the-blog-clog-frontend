@@ -4,6 +4,11 @@
     flex-wrap: wrap;
 }
 
+.cat {
+    display: flex;
+    justify-content: center;
+}
+
 .tiscription {
     display: flex;
     justify-content: space-around; 
