@@ -1,0 +1,23 @@
+.bigpostdiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tiscription {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    margin: 1em ;
+    padding:1em;
+    background-color: rgb(170, 230, 238);
+    width: 15em;
+    min-height: 5em;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+
+.b {
+    display: flex;
+    justify-content: center;
+}

@@ -1,4 +1,5 @@
 <app-post-result></app-post-result>
+<div class="div-form">
 <form (ngSubmit)='onSubmit()'>
 
 <!-- IMPORTANT AS HECC-->
@@ -15,14 +16,15 @@ I think the form should show up at the top of the categories page, right above a
 <br>
 
     <div>
-        <label for="header">Post Title</label>
+        <!-- <label for="header">Post Title</label> -->
         <input type="text" placeholder="Title" id="header" name="header" required [(ngModel)]="model.header" />
     </div>
     <div>
-        <label for="content">Content</label>
+        <!-- <label for="content">Content</label> -->
         <textarea placeholder="What do you have to say?" id="content" name="content" required [(ngModel)]="model.content"></textarea>
     </div>
     <div>
-        <button type="submit">Create Post</button>
+        <button type="submit" onClick="window.location.reload();">Create Post</button>
     </div>
 </form>
+</div>
