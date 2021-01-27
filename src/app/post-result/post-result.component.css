@@ -1,5 +1,5 @@
 .body {
-    background-color: lightgrey;
+    background-color: rgb(243, 243, 243);
 }
 
 .bigpostdiv {
@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     margin: 1em ;
     padding:1em;
-    background-color: rgb(170, 230, 238);
+    background-color: rgb(185, 235, 241);
     width: 15em;
     min-height: 5em;
     border: solid;

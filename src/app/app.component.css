@@ -1,6 +1,6 @@
 .flex-container {
     display: flex;
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
     justify-content: space-between;
 }
 
@@ -20,6 +20,6 @@ img {
 }
 
 hr {
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
     height: 1em;
 }

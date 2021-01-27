@@ -1,5 +1,5 @@
 .body {
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
 }
 
 .cathead {
@@ -18,9 +18,14 @@ form {
 }
 
 .bigcatdiv {
+    /* background-color: white;
+    border-radius: 50px;
+    padding-top: 45px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin:auto;
+    max-width: 1500px;
     /* border: 2px solid rgb(171, 171, 255); */
 }
 
