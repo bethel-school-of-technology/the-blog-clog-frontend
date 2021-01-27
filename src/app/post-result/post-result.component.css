@@ -1,3 +1,7 @@
+.body {
+    background-color: lightgrey;
+}
+
 .bigpostdiv {
     display: flex;
     justify-content: center;
@@ -13,8 +17,9 @@
     background-color: rgb(170, 230, 238);
     width: 15em;
     min-height: 5em;
+    border: solid;
     border-radius: 5px;
-    border-color: lightgray;
+    border-color: black;
 }
 
 .b {

@@ -4,11 +4,14 @@
     background-color: lightgrey;
 }
 
-.input {
-    margin: 5px;
+#header {
+    margin: .5em;
 }
 
-#header {
-    margin: 2em;
-    padding: 1em;
+#content {
+    margin: .5em;
+}
+
+button {
+    margin: .5em;
 }
